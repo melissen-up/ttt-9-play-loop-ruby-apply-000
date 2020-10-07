@@ -36,8 +36,8 @@ def turn(board)
 end
 
 def play(board)
-  loop do turn(board)
-  until display_board(board) == ["X","X","X","X","X","X","X","X","X"]
-  end
+  turn_count = 0
+  until turn_counter == 9
+  turn(board)
   end
 end
