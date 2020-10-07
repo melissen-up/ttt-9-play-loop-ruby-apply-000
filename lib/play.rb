@@ -35,4 +35,9 @@ def turn(board)
   end
 end
 
-# Define your play method below
+def play(board)
+  loop do turn(board)
+  until display_board(board) == ["X","X","X","X","X","X","X","X","X"]
+  end
+  end
+end
